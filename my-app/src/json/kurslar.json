@@ -1,0 +1,152 @@
+[
+  {
+    "nomi": "JavaScript Asoslari",
+    "tili": "O'zbekcha",
+    "muallifi": {
+      "ism": "Anvar Juraev",
+      "tajribasi": 7,
+      "talimi": "Toshkent Axborot Texnologiyalari Universiteti",
+      "ish_joyi": "Najot Ta'lim",
+      "yonalishi": "Frontend dasturlash"
+    },
+    "darajasi": "Boshlang‘ich",
+    "davomiyligi": 15,
+    "reytingi": 4.8,
+    "tavsifi": "JavaScript dasturlash tilining asosiy tushunchalari, sintaksisi va fundamental bilimlar."
+  },
+  {
+    "nomi": "Python Dasturlash",
+    "tili": "Inglizcha",
+    "muallifi": {
+      "ism": "John Doe",
+      "tajribasi": 10,
+      "talimi": "Massachusetts Institute of Technology (MIT)",
+      "ish_joyi": "Google",
+      "yonalishi": "Sun'iy intellekt va avtomatlashtirish"
+    },
+    "darajasi": "O'rta",
+    "davomiyligi": 25,
+    "reytingi": 4.6,
+    "tavsifi": "Python orqali dasturlash va avtomatlashtirish bo‘yicha to‘liq kurs."
+  },
+  {
+    "nomi": "React va Frontend",
+    "tili": "O'zbekcha",
+    "muallifi": {
+      "ism": "Ali Valiyev",
+      "tajribasi": 8,
+      "talimi": "National University of Uzbekistan",
+      "ish_joyi": "Freelance",
+      "yonalishi": "Frontend va UI/UX dizayn"
+    },
+    "darajasi": "Professional",
+    "davomiyligi": 30,
+    "reytingi": 4.9,
+    "tavsifi": "React kutubxonasi orqali zamonaviy web sayt va SPA yaratish bo‘yicha to‘liq kurs."
+  },
+  {
+    "nomi": "Django Web Dasturlash",
+    "tili": "Ruscha",
+    "muallifi": {
+      "ism": "Ivan Petrov",
+      "tajribasi": 9,
+      "talimi": "Moscow State University",
+      "ish_joyi": "Yandex",
+      "yonalishi": "Backend dasturlash"
+    },
+    "darajasi": "O'rta",
+    "davomiyligi": 20,
+    "reytingi": 4.7,
+    "tavsifi": "Django freymvorki orqali veb-ilovalar yaratish va ma’lumotlar bazasi bilan ishlash."
+  },
+  {
+    "nomi": "C++ Algoritmlar va Ma’lumot tuzilmalari",
+    "tili": "Inglizcha",
+    "muallifi": {
+      "ism": "Michael Smith",
+      "tajribasi": 12,
+      "talimi": "Stanford University",
+      "ish_joyi": "Facebook",
+      "yonalishi": "Dasturiy ta'minot injiniringi"
+    },
+    "darajasi": "Professional",
+    "davomiyligi": 40,
+    "reytingi": 4.8,
+    "tavsifi": "C++ dasturlash tilida algoritmlar, ma’lumot tuzilmalari va samarali kod yozish."
+  },
+  {
+    "nomi": "Java Backend Dasturlash",
+    "tili": "Inglizcha",
+    "muallifi": {
+      "ism": "Emily Johnson",
+      "tajribasi": 8,
+      "talimi": "Harvard University",
+      "ish_joyi": "Amazon",
+      "yonalishi": "Backend injiniring va mikroxizmatlar"
+    },
+    "darajasi": "O'rta",
+    "davomiyligi": 35,
+    "reytingi": 4.7,
+    "tavsifi": "Spring Boot va Java orqali backend dasturlashni o‘rganish."
+  },
+  {
+    "nomi": "Go Dasturlash Tili",
+    "tili": "Inglizcha",
+    "muallifi": {
+      "ism": "Robert Martin",
+      "tajribasi": 6,
+      "talimi": "California Institute of Technology",
+      "ish_joyi": "Google",
+      "yonalishi": "Go dasturlash va tizim dasturlash"
+    },
+    "darajasi": "Boshlang‘ich",
+    "davomiyligi": 20,
+    "reytingi": 4.5,
+    "tavsifi": "Go dasturlash tili asoslari va dasturlash amaliyotlari."
+  },
+  {
+    "nomi": "Android Ilova Dasturlash",
+    "tili": "O'zbekcha",
+    "muallifi": {
+      "ism": "Bekzod Rahimov",
+      "tajribasi": 7,
+      "talimi": "TATU",
+      "ish_joyi": "IT Park Uzbekistan",
+      "yonalishi": "Android dasturlash va mobil ilovalar"
+    },
+    "darajasi": "O'rta",
+    "davomiyligi": 28,
+    "reytingi": 4.6,
+    "tavsifi": "Kotlin va Java yordamida Android ilovalar yaratish bo‘yicha qo‘llanma."
+  },
+  {
+    "nomi": "iOS Swift Dasturlash",
+    "tili": "Inglizcha",
+    "muallifi": {
+      "ism": "Jane Doe",
+      "tajribasi": 9,
+      "talimi": "University of California, Berkeley",
+      "ish_joyi": "Apple",
+      "yonalishi": "iOS dasturlash va mobil ilovalar"
+    },
+    "darajasi": "Professional",
+    "davomiyligi": 30,
+    "reytingi": 4.8,
+    "tavsifi": "Swift orqali iOS ilovalar ishlab chiqish bo‘yicha to‘liq kurs."
+  },
+  {
+    "nomi": "Vue.js Framework Asoslari",
+    "tili": "Ruscha",
+    "muallifi": {
+      "ism": "Sergey Ivanov",
+      "tajribasi": 5,
+      "talimi": "St. Petersburg IT Academy",
+      "ish_joyi": "Freelance",
+      "yonalishi": "Frontend dasturlash va Vue.js"
+    },
+    "darajasi": "Boshlang‘ich",
+    "davomiyligi": 18,
+    "reytingi": 4.6,
+    "tavsifi": "Vue.js yordamida frontend ilovalar yaratish."
+  }
+]

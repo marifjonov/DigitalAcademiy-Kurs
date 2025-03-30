@@ -1,0 +1,309 @@
+/* Kurslar uchun maxsus container */
+.course-container.courses-container {
+  background: linear-gradient(to bottom, #ffffff 0%, #f5f7fa 100%);
+  padding: 30px;
+  border-radius: 15px;
+  margin: 40px auto;
+  max-width: 1200px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Sarlavha uchun stil */
+.course-container.courses-container .title {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.course-container.courses-container .title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #3498db, #2ecc71);
+  border-radius: 2px;
+}
+
+/* Kurslar ro'yxati */
+.course-container.courses-container .course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 10px;
+}
+
+/* Kurs kartasi */
+.course-container.courses-container .course-card {
+  background: white;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+}
+
+.course-container.courses-container .course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Kurs rasmi (to'rtburchak shaklda) */
+.course-container.courses-container .course-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.course-container.courses-container .course-card:hover img {
+  transform: scale(1.03);
+}
+
+/* Kurs kontenti */
+.course-container.courses-container .course-card .course-content {
+  padding: 20px;
+}
+
+/* Kurs nomi */
+.course-container.courses-container .course-card h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  min-height: 60px;
+}
+
+/* Ma'lumotlar uchun stil */
+.course-container.courses-container .course-card p {
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 18px;
+}
+
+.course-container.courses-container .course-card p::before {
+  content: '•';
+  color: #3498db;
+  position: absolute;
+  left: 0;
+}
+
+.course-container.courses-container .course-card p strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Tavsif uchun alohida stil */
+.course-container.courses-container .course-card .description {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+  border-left: 3px solid #3498db;
+}
+
+/* Reyting uchun alohida stil */
+.course-container.courses-container .course-card .rating {
+  color: #f39c12;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.course-container.courses-container .course-card .rating svg {
+  margin-right: 5px;
+}
+
+/* Ko'proq ko'rish tugmasi */
+.course-container.courses-container .show-more-btn {
+  background: linear-gradient(to right, #3498db, #2ecc71);
+  margin-top: 30px;
+  border: none;
+}
+
+.course-container.courses-container .show-more-btn:hover {
+  background: linear-gradient(to right, #2980b9, #27ae60);
+}
+
+/* Mobil versiya */
+@media (max-width: 768px) {
+  .course-container.courses-container .course-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .course-container.courses-container .title {
+    font-size: 1.8rem;
+  }
+  
+  .course-container.courses-container .course-card img {
+    height: 150px;
+  }
+}
+/* O'qituvchilar uchun maxsus container */
+.course-container.teachers-container {
+	background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
+	padding: 30px;
+	border-radius: 15px;
+	margin: 40px auto;
+	max-width: 1200px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Sarlavha uchun stil */
+.course-container.teachers-container .title {
+	color: #2c3e50;
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 2.2rem;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.course-container.teachers-container .title::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100px;
+	height: 4px;
+	background: linear-gradient(to right, #3498db, #2ecc71);
+	border-radius: 2px;
+}
+
+/* O'qituvchilar ro'yxati */
+.course-container.teachers-container .course-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 25px;
+	padding: 10px;
+}
+
+/* O'qituvchi kartasi */
+.course-container.teachers-container .course-card {
+	background: white;
+	border-radius: 12px;
+	padding: 25px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	transition: all 0.3s ease;
+	text-align: center;
+	border: 1px solid #e0e0e0;
+}
+
+.course-container.teachers-container .course-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* O'qituvchi rasmi */
+.course-container.teachers-container .course-card img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 4px solid #fff;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	margin: 0 auto 15px;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.course-container.teachers-container .course-card:hover img {
+	transform: scale(1.05);
+}
+
+/* O'qituvchi ismi */
+.course-container.teachers-container .course-card h2 {
+	color: #2c3e50;
+	margin-bottom: 15px;
+	font-size: 1.4rem;
+}
+
+/* Ma'lumotlar uchun stil */
+.course-container.teachers-container .course-card p {
+	color: #555;
+	margin-bottom: 8px;
+	font-size: 0.95rem;
+	text-align: left;
+	padding-left: 15px;
+	position: relative;
+}
+
+.course-container.teachers-container .course-card p::before {
+	content: '•';
+	color: #3498db;
+	position: absolute;
+	left: 0;
+}
+
+.course-container.teachers-container .course-card p strong {
+	color: #2c3e50;
+	font-weight: 600;
+}
+
+/* Tavsif uchun alohida stil */
+.course-container.teachers-container .course-card .description {
+	background: #f8f9fa;
+	padding: 12px;
+	border-radius: 8px;
+	margin-top: 15px;
+	font-style: italic;
+	position: relative;
+	text-align: center;
+	font-size: 0.9rem;
+	color: #555;
+}
+
+.course-container.teachers-container .course-card .description::before,
+.course-container.teachers-container .course-card .description::after {
+	content: '"';
+	font-size: 1.2rem;
+	color: #3498db;
+	opacity: 0.3;
+	position: absolute;
+}
+
+.course-container.teachers-container .course-card .description::before {
+	left: 5px;
+	top: 5px;
+}
+
+.course-container.teachers-container .course-card .description::after {
+	right: 5px;
+	bottom: 5px;
+}
+
+/* Ko'proq ko'rish tugmasi */
+.course-container.teachers-container .show-more-btn {
+	background: linear-gradient(to right, #3498db, #2ecc71);
+	margin-top: 30px;
+	border: none;
+}
+
+.course-container.teachers-container .show-more-btn:hover {
+	background: linear-gradient(to right, #2980b9, #27ae60);
+}
+
+/* Mobil versiya */
+@media (max-width: 768px) {
+	.course-container.teachers-container .course-list {
+		grid-template-columns: 1fr;
+	}
+
+	.course-container.teachers-container .title {
+		font-size: 1.8rem;
+	}
+}

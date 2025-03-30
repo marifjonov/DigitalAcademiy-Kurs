@@ -1,0 +1,82 @@
+[
+  {
+    "ism": "Anvar Juraev",
+    "tajribasi": 7,
+    "talimi": "Toshkent Axborot Texnologiyalari Universiteti",
+    "ish_joyi": "Najot Ta'lim",
+    "yonalishi": "Frontend dasturlash",
+    "kurslar": ["JavaScript Asoslari"]
+  },
+  {
+    "ism": "John Doe",
+    "tajribasi": 10,
+    "talimi": "Massachusetts Institute of Technology (MIT)",
+    "ish_joyi": "Google",
+    "yonalishi": "Sun'iy intellekt va avtomatlashtirish",
+    "kurslar": ["Python Dasturlash"]
+  },
+  {
+    "ism": "Ali Valiyev",
+    "tajribasi": 8,
+    "talimi": "National University of Uzbekistan",
+    "ish_joyi": "Freelance",
+    "yonalishi": "Frontend va UI/UX dizayn",
+    "kurslar": ["React va Frontend"]
+  },
+  {
+    "ism": "Ivan Petrov",
+    "tajribasi": 9,
+    "talimi": "Moscow State University",
+    "ish_joyi": "Yandex",
+    "yonalishi": "Backend dasturlash",
+    "kurslar": ["Django Web Dasturlash"]
+  },
+  {
+    "ism": "Michael Smith",
+    "tajribasi": 12,
+    "talimi": "Stanford University",
+    "ish_joyi": "Facebook",
+    "yonalishi": "Dasturiy ta'minot injiniringi",
+    "kurslar": ["C++ Algoritmlar va Ma’lumot tuzilmalari"]
+  },
+  {
+    "ism": "Emily Johnson",
+    "tajribasi": 8,
+    "talimi": "Harvard University",
+    "ish_joyi": "Amazon",
+    "yonalishi": "Backend injiniring va mikroxizmatlar",
+    "kurslar": ["Java Backend Dasturlash"]
+  },
+  {
+    "ism": "Robert Martin",
+    "tajribasi": 6,
+    "talimi": "California Institute of Technology",
+    "ish_joyi": "Google",
+    "yonalishi": "Go dasturlash va tizim dasturlash",
+    "kurslar": ["Go Dasturlash Tili"]
+  },
+  {
+    "ism": "Bekzod Rahimov",
+    "tajribasi": 7,
+    "talimi": "TATU",
+    "ish_joyi": "IT Park Uzbekistan",
+    "yonalishi": "Android dasturlash va mobil ilovalar",
+    "kurslar": ["Android Ilova Dasturlash"]
+  },
+  {
+    "ism": "Jane Doe",
+    "tajribasi": 9,
+    "talimi": "University of California, Berkeley",
+    "ish_joyi": "Apple",
+    "yonalishi": "iOS dasturlash va mobil ilovalar",
+    "kurslar": ["iOS Swift Dasturlash"]
+  },
+  {
+    "ism": "Sergey Ivanov",
+    "tajribasi": 5,
+    "talimi": "St. Petersburg IT Academy",
+    "ish_joyi": "Freelance",
+    "yonalishi": "Frontend dasturlash va Vue.js",
+    "kurslar": ["Vue.js Framework Asoslari"]
+  }
+]

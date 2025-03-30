@@ -1,0 +1,67 @@
+/* Umumiy konteyner */
+.error-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: black;
+	color: white;
+	position: relative;
+	overflow: hidden;
+}
+
+/* Matn qismi */
+.error-text {
+	max-width: 500px;
+	text-align: left;
+}
+
+.error-code {
+	color: #3b82f6;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.error-title {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.error-message {
+	color: #9ca3af;
+	margin-top: 10px;
+}
+
+/* 404 animatsiyasi (oldingi buttonlar o‘rnida) */
+.error-animation {
+	position: absolute;
+	left: 50%;
+	bottom: 15%;
+	transform: translateX(-50%);
+}
+
+.glitch-text {
+	font-size: 100px;
+	font-weight: bold;
+	position: relative;
+	color: white;
+	animation: glitch 1s infinite alternate;
+}
+
+@keyframes glitch {
+	0% {
+		text-shadow: -3px -3px 0 #ff00ff, 3px 3px 0 #00ffff;
+	}
+	25% {
+		text-shadow: 3px -3px 0 #ff00ff, -3px 3px 0 #00ffff;
+	}
+	50% {
+		text-shadow: -5px 5px 0 #ff00ff, 5px -5px 0 #00ffff;
+	}
+	75% {
+		text-shadow: 5px 5px 0 #ff00ff, -5px -5px 0 #00ffff;
+	}
+	100% {
+		text-shadow: -3px 3px 0 #ff00ff, 3px -3px 0 #00ffff;
+	}
+}

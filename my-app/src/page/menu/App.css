@@ -1,0 +1,320 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #eaeaea;
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	width: 96%;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+/* Kurslar uchun maxsus container */
+.course-container {
+	background: linear-gradient(to bottom, #ffffff 0%, #f5f7fa 100%);
+	padding: 30px;
+	border-radius: 15px;
+	margin: 40px auto;
+	max-width: 1200px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Sarlavha uchun stil */
+.course-container .title {
+	color: #2c3e50;
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 2.2rem;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.course-container .title::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100px;
+	height: 4px;
+	background: linear-gradient(to right, #3498db, #2ecc71);
+	border-radius: 2px;
+}
+
+/* Kurslar ro'yxati */
+.course-container .course-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 25px;
+	padding: 10px;
+}
+
+/* Kurs kartasi */
+.course-container .course-card {
+	background: white;
+	border-radius: 12px;
+	padding: 20px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	transition: all 0.3s ease;
+	text-align: left;
+	border: 1px solid #e0e0e0;
+	overflow: hidden;
+}
+
+.course-container .course-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Kurs rasmi */
+.course-container .course-card img {
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	transition: all 0.3s ease;
+}
+
+.course-container .course-card:hover img {
+	transform: scale(1.03);
+}
+
+/* Kurs nomi */
+.course-container .course-card h2 {
+	color: #2c3e50;
+	margin-bottom: 15px;
+	font-size: 1.4rem;
+}
+
+/* Ma'lumotlar uchun stil */
+.course-container .course-card p {
+	color: #555;
+	margin-bottom: 10px;
+	font-size: 0.95rem;
+	position: relative;
+	padding-left: 18px;
+}
+
+.course-container .course-card p::before {
+	content: '•';
+	color: #3498db;
+	position: absolute;
+	left: 0;
+}
+
+.course-container .course-card p strong {
+	color: #2c3e50;
+	font-weight: 600;
+}
+
+/* Tavsif uchun alohida stil */
+.course-container .course-card .description {
+	background: #f8f9fa;
+	padding: 12px;
+	border-radius: 8px;
+	margin-top: 15px;
+	font-size: 0.9rem;
+	color: #555;
+	line-height: 1.5;
+	border-left: 3px solid #3498db;
+}
+
+/* Ko'proq ko'rish tugmasi */
+.course-container .show-more-btn {
+	display: block;
+	width: 100%;
+	max-width: 300px;
+	margin: 30px auto 0;
+	padding: 12px 20px;
+	background: linear-gradient(to right, #3498db, #2ecc71);
+	color: white;
+	border: none;
+	border-radius: 30px;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	text-align: center;
+}
+
+.course-container .show-more-btn:hover {
+	background: linear-gradient(to right, #2980b9, #27ae60);
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobil versiya */
+@media (max-width: 768px) {
+	.course-container .course-list {
+		grid-template-columns: 1fr;
+	}
+
+	.course-container .title {
+		font-size: 1.8rem;
+	}
+
+	.course-container .course-card img {
+		height: 150px;
+	}
+}
+.code-editor {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 20px;
+	background: #f5f5f5;
+	border-radius: 10px;
+}
+
+.editor {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+	padding: 10px;
+	font-family: monospace;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	resize: none;
+}
+
+.preview {
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background: white;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+.code-editor {
+	font-family: 'Fira Code', monospace;
+	max-width: 1200px;
+	margin: 0 auto;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.h2bu {
+	text-align: center;
+	color: #333;
+	margin-bottom: 20px;
+	font-size: 2rem;
+}
+
+.editor {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.code-section {
+	background: #282c34;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.section-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 15px;
+	background: #1e2227;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.section-header:hover {
+	background: #252931;
+}
+
+.section-header h3 {
+	color: #abb2bf;
+	margin: 0;
+	font-size: 1.1rem;
+}
+
+.toggle-btn {
+	background: transparent;
+	border: none;
+	color: #abb2bf;
+	font-size: 1.2rem;
+	cursor: pointer;
+	padding: 0 10px;
+	transition: transform 0.2s;
+}
+
+.section-header:hover .toggle-btn {
+	color: #fff;
+}
+
+.preview h3 {
+	background: #f5f5f5;
+	padding: 8px 15px;
+	margin: 0;
+	color: #333;
+	font-size: 1.1rem;
+}
+
+.run-btn {
+	display: block;
+	margin: 20px auto 0;
+	padding: 10px 20px;
+	background: #61dafb;
+	color: #282c34;
+	border: none;
+	border-radius: 4px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.run-btn:hover {
+	background: #4fa8d3;
+}
+.h2bu {
+	font-size: 2.2em;
+	color: #d3f706;
+	text-align: center;
+	margin-top: 25px;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+	text-decoration: underline;
+	text-decoration-color: #ffb703;
+	text-decoration-thickness: 3px;
+	text-underline-offset: 5px;
+	text-decoration-style: wavy;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	margin: 20px 0;
+
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+	cursor: pointer;
+	&:hover {
+		color: #ffb703;
+		text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+		transform: scale(1.05);
+	}
+}
+.output-frame {
+	width: 100%;
+	height: 1000px;
+	border: none;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

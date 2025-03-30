@@ -1,0 +1,151 @@
+body {
+	background-color: #f8fafc;
+	color: #1e293b;
+	font-family: 'Poppins', sans-serif;
+}
+
+.site-header {
+	width: 100%;
+	background: linear-gradient(135deg, #1e293b, #334155);
+	padding: 15px 0;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 0 0 15px 15px;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.logo:hover {
+	color: #ffb703;
+}
+
+.nav {
+	display: flex;
+	gap: 25px;
+}
+
+.nav a {
+	padding: 10px;
+	color: #e2e8f0;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.nav a:hover {
+	color: #ffb703;
+}
+
+.auth-buttons {
+	display: flex;
+	gap: 12px;
+}
+
+button {
+	display: flex;
+	align-items: center;
+	border: none;
+	padding: 10px 15px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.login-btn {
+	background: #2563eb;
+	color: white;
+	border: 2px solid white;
+}
+
+.login-btn:hover {
+	background: #1e40af;
+	border: 2px solid white;
+}
+
+.signup-btn {
+	background: #ffb703;
+	color: #1e293b;
+	border: 2px solid #ffb703;
+}
+
+.signup-btn:hover {
+	background: #ffa502;
+	border: 2px solid white;
+	color: white;
+}
+
+.icon {
+	width: 18px;
+	height: 18px;
+	margin-right: 5px;
+}
+
+.menu-btn {
+	display: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.menu-icon {
+	width: 28px;
+	height: 28px;
+	color: white;
+}
+
+.animated-title {
+	letter-spacing: 3px;
+	text-decoration: none;
+	font-size: 2em;
+	font-family: 'Arial';
+	position: relative;
+	text-transform: uppercase;
+	color: white;
+	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+}
+
+.hover-effect {
+	position: absolute;
+	box-sizing: border-box;
+	color: #ffb703;
+	width: 0%;
+	inset: 0;
+	border-right: 6px solid #ffb703;
+
+	transition: 0.5s;
+	-webkit-text-stroke: 1px #ffb703;
+}
+
+.animated-title:hover .hover-effect {
+	width: 100%;
+	filter: drop-shadow(0 0 15px #ffb703);
+}
+.link {
+	text-decoration: none;
+}
+@media (max-width: 768px) {
+	.nav,
+	.auth-buttons {
+		display: none;
+	}
+
+	.menu-btn {
+		display: block;
+	}
+}
