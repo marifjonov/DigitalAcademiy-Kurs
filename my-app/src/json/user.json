@@ -1,0 +1,99 @@
+{
+	"foydalanuvchi": {
+		"toliqIsmi": "Anvar Juraev",
+		"email": "anvar.juraev@example.com",
+		"parol": "Anvar123",
+		"telefon": "+998901234567",
+		"rol": "talaba",
+		"rasmi": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrAA9KmCtxPgYhzS7xx2i_YhcGrcHQT9OOYA&s",
+		"oqiyotganKurslari": [
+			{
+				"kursId": "5f8d8f7d8f7d8f7d8f7d8f7d",
+				"kursNomi": "JavaScript Asoslari",
+				"tili": "O'zbekcha",
+				"daraja": "Boshlang'ich",
+				"reyting": 4.8,
+				"boshlanganSana": "2023-05-20T10:00:00Z",
+				"tugatganFoiz": 25,
+				"darsliklar": [
+					{
+						"tur": "video",
+						"id": "5f8d8f7d8f7d8f7d8f7d8f7a",
+						"nomi": "JavaScript kirish",
+						"url": "https://example.com/video1",
+						"davomiylik": 45,
+						"holat": {
+							"korilgan": true,
+							"oxirgiKorilganSana": "2023-05-21T15:30:00Z",
+							"korishlarSoni": 3
+						}
+					},
+					{
+						"tur": "video",
+						"id": "5f8d8f7d8f7d8f7d8f7d8f7b",
+						"nomi": "O'zgaruvchilar va ma'lumot turlari",
+						"url": "https://example.com/video2",
+						"davomiylik": 60,
+						"holat": {
+							"korilgan": false,
+							"oxirgiKorilganSana": null,
+							"korishlarSoni": 0
+						}
+					},
+					{
+						"tur": "kitob",
+						"id": "5f8d8f7d8f7d8f7d8f7d8f7c",
+						"nomi": "JavaScript: The Good Parts",
+						"url": "https://example.com/kitob1.pdf",
+						"muallif": "Douglas Crockford",
+						"sahifalar": 176
+					}
+				]
+			}
+		],
+		"yaratilganSana": "2023-05-15T08:00:00Z"
+	},
+	"kurslar": [
+		{
+			"id": "5f8d8f7d8f7d8f7d8f7d8f7d",
+			"nomi": "JavaScript Asoslari",
+			"tili": "O'zbekcha",
+			"daraja": "Boshlang'ich",
+			"davomiylik": 15,
+			"reyting": 4.8,
+			"tavsif": "JavaScript dasturlash tilining asosiy tushunchalari, sintaksisi va fundamental bilimlar.",
+			"narx": 500000,
+			"oquvchilarSoni": 120,
+			"rasmi": "https://example.com/js-course.jpg",
+			"darsliklar": [
+				{
+					"tur": "video",
+					"id": "5f8d8f7d8f7d8f7d8f7d8f7a",
+					"nomi": "JavaScript kirish",
+					"url": "https://example.com/video1",
+					"davomiylik": 45,
+					"ko'rishlar": 1500,
+					"yuklanganSana": "2023-01-10T10:00:00Z"
+				},
+				{
+					"tur": "video",
+					"id": "5f8d8f7d8f7d8f7d8f7d8f7b",
+					"nomi": "O'zgaruvchilar va ma'lumot turlari",
+					"url": "https://example.com/video2",
+					"davomiylik": 60,
+					"ko'rishlar": 1200,
+					"yuklanganSana": "2023-01-12T10:00:00Z"
+				},
+				{
+					"tur": "kitob",
+					"id": "5f8d8f7d8f7d8f7d8f7d8f7c",
+					"nomi": "JavaScript: The Good Parts",
+					"url": "https://example.com/kitob1.pdf",
+					"muallif": "Douglas Crockford",
+					"sahifalar": 176
+				}
+			],
+			"yaratilganSana": "2023-01-01T09:00:00Z"
+		}
+	]
+}
