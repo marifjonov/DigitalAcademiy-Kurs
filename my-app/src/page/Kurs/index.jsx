@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import teacherData from '../../json/user.json'
 import './App.css'
-import oquvchiData from '../../json/user.json'
 
 function App() {
 	const [showAllCourses, setShowAllCourses] = useState(false)
@@ -11,40 +11,26 @@ function App() {
 
 	useEffect(() => {
 		try {
-			// JSON ma'lumotlarini tekshirish
-			if (!oquvchiData || !oquvchiData.kurslari) {
+			if (
+				!teacherData ||
+				!teacherData.teacher ||
+				!teacherData.teacher.kurslar
+			) {
 				throw new Error("Ma'lumotlar strukturasi noto'g'ri")
 			}
 
-			// O'qituvchi ma'lumotlarini o'rnatish
-			setTeacher({
-				ism: oquvchiData.ism,
-				familiya: oquvchiData.familiya,
-				tajribasi: oquvchiData.tajriba,
-				talimi: oquvchiData.talim,
-				ish_joyi: oquvchiData.ishJoyi,
-				yonalishi: oquvchiData.yonalish,
-				rasmi: oquvchiData.rasmi,
-				bio: `${oquvchiData.yonalish} bo'yicha ${oquvchiData.tajriba} yillik tajribaga ega mutaxassis`,
-			})
+			setTeacher(teacherData.teacher.shaxsiy_malumotlar)
 
-			// Kurslarni o'rnatish
-			const formattedCourses = oquvchiData.kurslari.map(course => ({
-				id: course.nomi.replace(/\s+/g, '-').toLowerCase(),
+			const formattedCourses = teacherData.teacher.kurslar.map(course => ({
+				id: course.kurs_id,
 				nomi: course.nomi,
-				tili: course.tili,
-				darajasi: course.daraja,
-				davomiyligi: course.davomiylik,
-				reytingi: course.reyting,
-				tavsifi: course.tavsif,
-				narxi: course.narx,
-				oquvchilar_soni: course.oquvchilarSoni,
+				darajasi: course.darajasi,
+				tavsif: course.tavsif,
+				narx: course.narx.bepul ? 'Bepul' : `${course.narx.asl_narx} so'm`,
+				reytingi: course.reyting.umumiy,
+				user_soni: course.statistika.user_soni,
 				videolar: course.videolar,
-				yaratilgan_sana: course.yaratilganSana,
-				muallifi: {
-					ism: `${oquvchiData.ism} ${oquvchiData.familiya}`,
-					tajribasi: oquvchiData.tajriba,
-				},
+				sertifikat: course.sertifikat,
 			}))
 
 			setCourses(formattedCourses)
@@ -71,7 +57,7 @@ function App() {
 			<div className='teacher-profile'>
 				<div className='teacher-header'>
 					<img
-						src={`${teacher.rasmi}`}
+						src={teacher.profil_rasmi}
 						alt={`${teacher.ism} ${teacher.familiya}`}
 						className='teacher-avatar'
 					/>
@@ -80,26 +66,21 @@ function App() {
 							{teacher.ism} {teacher.familiya}
 						</h1>
 						<p>
-							<strong>Tajriba:</strong> {teacher.tajribasi} yil
+							<strong>Mutaxassislik:</strong> {teacher.mutaxassislik}
 						</p>
 						<p>
-							<strong>Ta'lim:</strong> {teacher.talimi}
+							<strong>Telefon:</strong> {teacher.telefon}
 						</p>
 						<p>
-							<strong>Ish joyi:</strong> {teacher.ish_joyi}
+							<strong>Manzil:</strong> {teacher.manzil}
 						</p>
-						<p>
-							<strong>Yo'nalish:</strong> {teacher.yonalishi}
-						</p>
+						<p className='teacher-bio'>{teacher.bio}</p>
 					</div>
 				</div>
-				<p className='teacher-bio'>{teacher.bio}</p>
 			</div>
 
-			{/* Kurslar bo'limi */}
 			<div className='courses-section'>
 				<h2 className='section-title'>O'qituvchi Kurslari</h2>
-
 				{courses.length === 0 ? (
 					<p className='no-courses'>Hozircha kurslar mavjud emas</p>
 				) : (
@@ -109,39 +90,20 @@ function App() {
 								<div key={course.id} className='course-card'>
 									<div className='course-header'>
 										<h3>{course.nomi}</h3>
-										<span className='course-rating'>
-											<svg
-												width='16'
-												height='16'
-												viewBox='0 0 24 24'
-												fill='#f39c12'
-											>
-												<path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z' />
-											</svg>
-											{course.reytingi}
-										</span>
+										<span className='course-rating'>{course.reytingi}</span>
 									</div>
-
 									<div className='course-details'>
-										<p>
-											<strong>Til:</strong> {course.tili}
-										</p>
 										<p>
 											<strong>Daraja:</strong> {course.darajasi}
 										</p>
 										<p>
-											<strong>Davomiylik:</strong> {course.davomiyligi} soat
+											<strong>Narx:</strong> {course.narx}
 										</p>
 										<p>
-											<strong>Narx:</strong> {course.narxi.toLocaleString()}{' '}
-											so'm
-										</p>
-										<p>
-											<strong>O'quvchilar:</strong> {course.oquvchilar_soni} ta
+											<strong>O'quvchilar:</strong> {course.user_soni} ta
 										</p>
 									</div>
-
-									<p className='course-description'>{course.tavsifi}</p>
+									<p className='course-description'>{course.tavsif}</p>
 
 									<div className='course-videos'>
 										<h4>Dars Videolari ({course.videolar.length})</h4>
@@ -153,9 +115,9 @@ function App() {
 														target='_blank'
 														rel='noopener noreferrer'
 													>
-														{video.nomi} ({video.davomiylik} min)
+														{video.sarlavha} ({video.vaqti})
 													</a>
-													<span>{video.korishlar} ko'rish</span>
+													<span>{video.views} ko'rish</span>
 												</li>
 											))}
 										</ul>

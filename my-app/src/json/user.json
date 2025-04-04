@@ -1,99 +1,146 @@
 {
-	"foydalanuvchi": {
-		"toliqIsmi": "Anvar Juraev",
-		"email": "anvar.juraev@example.com",
-		"parol": "Anvar123",
-		"telefon": "+998901234567",
-		"rol": "talaba",
-		"rasmi": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrAA9KmCtxPgYhzS7xx2i_YhcGrcHQT9OOYA&s",
-		"oqiyotganKurslari": [
+	"teacher": {
+		"shaxsiy_malumotlar": {
+			"ism": "Aziz",
+			"familiya": "Karimov",
+			"mutaxassislik": "Full-stack dasturchi",
+			"email": "aziz.karimov@example.com",
+			"telefon": "+998901234567",
+			"manzil": "Toshkent shahar",
+			"bio": "5 yillik tajribaga ega dasturlash o'qituvchisi",
+			"profil_rasmi": "https://example.com/profiles/aziz.jpg",
+			"status": "active"
+		},
+		"hisob_malumotlari": {
+			"balans": 1750000,
+			"pul_birligi": "so'm",
+			"tolov_tizimlari": ["Payme", "Click", "Visa"],
+			"oylik_xisobot": true
+		},
+		"kurslar": [
 			{
-				"kursId": "5f8d8f7d8f7d8f7d8f7d8f7d",
-				"kursNomi": "JavaScript Asoslari",
-				"tili": "O'zbekcha",
-				"daraja": "Boshlang'ich",
-				"reyting": 4.8,
-				"boshlanganSana": "2023-05-20T10:00:00Z",
-				"tugatganFoiz": 25,
-				"darsliklar": [
+				"kurs_id": "PY101",
+				"nomi": "Python dasturlash asoslari",
+				"darajasi": "Boshlang'ich",
+				"tavsif": "Python dasturlash tilini noldan o'rganish kursi",
+				"narx": {
+					"bepul": true,
+					"chegirma": 0,
+					"asl_narx": 0
+				},
+				"reyting": {
+					"umumiy": 4.8,
+					"baholar_soni": 128
+				},
+				"statistika": {
+					"user_soni": 542,
+					"tamomlash_foizi": 78
+				},
+				"videolar": [
 					{
-						"tur": "video",
-						"id": "5f8d8f7d8f7d8f7d8f7d8f7a",
-						"nomi": "JavaScript kirish",
-						"url": "https://example.com/video1",
-						"davomiylik": 45,
-						"holat": {
-							"korilgan": true,
-							"oxirgiKorilganSana": "2023-05-21T15:30:00Z",
-							"korishlarSoni": 3
+						"video_id": "PY101-01",
+						"sarlavha": "Python kirish",
+						"url": "https://example.com/videos/python-intro",
+						"vaqti": "15:23",
+						"yuklangan_sana": "2023-01-10",
+						"views": 1245,
+						"faqat_onlayn": true,
+						"streaming": {
+							"format": "HLS",
+							"max_sifat": "1080p",
+							"tezlik_optimizatsiyasi": true
+						},
+						"DRM": {
+							"turi": "Widevine",
+							"holati": "active"
 						}
-					},
-					{
-						"tur": "video",
-						"id": "5f8d8f7d8f7d8f7d8f7d8f7b",
-						"nomi": "O'zgaruvchilar va ma'lumot turlari",
-						"url": "https://example.com/video2",
-						"davomiylik": 60,
-						"holat": {
-							"korilgan": false,
-							"oxirgiKorilganSana": null,
-							"korishlarSoni": 0
-						}
-					},
-					{
-						"tur": "kitob",
-						"id": "5f8d8f7d8f7d8f7d8f7d8f7c",
-						"nomi": "JavaScript: The Good Parts",
-						"url": "https://example.com/kitob1.pdf",
-						"muallif": "Douglas Crockford",
-						"sahifalar": 176
 					}
-				]
+				],
+				"modullar": [
+					{
+						"nomi": "Asosiy tushunchalar",
+						"darslar_soni": 8,
+						"tamomlangan": false
+					}
+				],
+				"sertifikat": true
 			}
 		],
-		"yaratilganSana": "2023-05-15T08:00:00Z"
-	},
-	"kurslar": [
-		{
-			"id": "5f8d8f7d8f7d8f7d8f7d8f7d",
-			"nomi": "JavaScript Asoslari",
-			"tili": "O'zbekcha",
-			"daraja": "Boshlang'ich",
-			"davomiylik": 15,
-			"reyting": 4.8,
-			"tavsif": "JavaScript dasturlash tilining asosiy tushunchalari, sintaksisi va fundamental bilimlar.",
-			"narx": 500000,
-			"oquvchilarSoni": 120,
-			"rasmi": "https://example.com/js-course.jpg",
-			"darsliklar": [
-				{
-					"tur": "video",
-					"id": "5f8d8f7d8f7d8f7d8f7d8f7a",
-					"nomi": "JavaScript kirish",
-					"url": "https://example.com/video1",
-					"davomiylik": 45,
-					"ko'rishlar": 1500,
-					"yuklanganSana": "2023-01-10T10:00:00Z"
-				},
-				{
-					"tur": "video",
-					"id": "5f8d8f7d8f7d8f7d8f7d8f7b",
-					"nomi": "O'zgaruvchilar va ma'lumot turlari",
-					"url": "https://example.com/video2",
-					"davomiylik": 60,
-					"ko'rishlar": 1200,
-					"yuklanganSana": "2023-01-12T10:00:00Z"
-				},
-				{
-					"tur": "kitob",
-					"id": "5f8d8f7d8f7d8f7d8f7d8f7c",
-					"nomi": "JavaScript: The Good Parts",
-					"url": "https://example.com/kitob1.pdf",
-					"muallif": "Douglas Crockford",
-					"sahifalar": 176
-				}
-			],
-			"yaratilganSana": "2023-01-01T09:00:00Z"
+		"texnologiyalar": [
+			{
+				"nomi": "Python",
+				"tajriba": "5 yil",
+				"darajasi": "Kuchli"
+			},
+			{
+				"nomi": "Django",
+				"tajriba": "4 yil",
+				"darajasi": "Kuchli"
+			}
+		],
+		"loyihalar": [
+			{
+				"loyiha_id": "PR001",
+				"nomi": "Online ta'lim platformasi",
+				"tavsif": "Dasturlash kurslari uchun interaktiv platforma",
+				"texnologiyalar": ["Django", "React", "PostgreSQL"],
+				"link": "https://example.com/edu-platform",
+				"ishchi_holatda": true,
+				"github": "https://github.com/aziz/edu-platform"
+			}
+		],
+		"ijtimoiy_tarmoqlar": {
+			"github": "https://github.com/aziz",
+			"linkedin": "https://linkedin.com/in/aziz",
+			"telegram": "@azizcoder"
+		},
+		"sozlamalar": {
+			"bildirishnomalar": true,
+			"qorongilik_rejimi": false,
+			"til": "uz"
 		}
-	]
+	},
+
+	"user": {
+		"shaxsiy_malumotlar": {
+			"ism": "Dilshod",
+			"familiya": "Rahimov",
+			"email": "dilshod.rahimov@example.com",
+			"telefon": "+998901112233",
+			"manzil": "Samarqand",
+			"bio": "Dasturlashni o'rganayotgan talaba",
+			"profil_rasmi": "https://example.com/profiles/dilshod.jpg",
+			"status": "active"
+		},
+		"hisob_malumotlari": {
+			"balans": 750000,
+			"pul_birligi": "so'm",
+			"bonuslar": 25000
+		},
+		"sotib_olingan_kurslar": [
+			{
+				"kurs_id": "PY101",
+				"nomi": "Python dasturlash asoslari",
+				"o'qituvchi": "Aziz Karimov",
+				"sotib_olish_sana": "2023-06-10",
+				"turi": "doimiy",
+				"narxi": 499000,
+				"progress": 65,
+				"oxirgi_kirish": "2023-08-20T14:30:00"
+			}
+		],
+		"platforma_sozlamalari": {
+			"video_qualiteti": {
+				"avtomatik": true,
+				"standart": "720p"
+			},
+			"internet_talablari": {
+				"min_tezlik": "2 Mbps",
+				"tavsiya_etilgan": "5 Mbps"
+			}
+		},
+		"texnik_qo'llab-quvvat": {
+			"aloqa": "support@platforma.uz"
+		}
+	}
 }
